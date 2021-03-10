@@ -1,12 +1,9 @@
-const Button = ({ text, color }) => {
+const Button = ({ text, color, onAdd }) => {
   return (
-    <button style={{ backgroundColor: color }} className="btn">
+    <button style={{ backgroundColor: color }} className="btn" onClick={onAdd}>
       {text}
     </button>
   );
 };
 
-Button.defaultProps = {
-  color: "blue",
-};
 export default Button;

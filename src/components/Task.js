@@ -1,8 +1,11 @@
 import CancelIcon from "@material-ui/icons/Cancel";
 
-const Task = ({ task, onDelete }) => {
+const Task = ({ task, onDelete, onToggle }) => {
   return (
-    <div>
+    <div
+      className={`task ${task.reminder ? "reminder" : ""}`}
+      onDoubleClick={() => onToggle(task.id)}
+    >
       <h3>
         {task.text} <CancelIcon onClick={() => onDelete(task.id)}></CancelIcon>
       </h3>
