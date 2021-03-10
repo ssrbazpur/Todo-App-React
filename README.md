@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was made to Revise Basic React Components (Only Front End). (Todo Task Tracker)[https://dreamy-hawking-9b1353.netlify.app/]
 
 ## Available Scripts
 
