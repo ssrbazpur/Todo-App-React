@@ -1,5 +1,4 @@
 import Header from "./components/Header";
-import Button from "./components/Button";
 import Tasks from "./components/Tasks";
 import { useState } from "react";
 import AddTask from "./components/AddTask";
@@ -59,6 +58,7 @@ function App() {
       <Header
         title="Task Tracker"
         onAdd={() => setShowAddTask(!showAddTask)}
+        showAdd={showAddTask}
       ></Header>
       {showAddTask && <AddTask onAdd={addTask}></AddTask>}
 
